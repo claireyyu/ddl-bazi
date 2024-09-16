@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import BaziCalculator from '../components/home/BaziCalculator';
 import Link from 'next/link';
 import ContactForm from '@/components/home/ContactForm';
-import {Globe} from 'react-feather';
+import {Globe, Facebook, Instagram, Twitter, Youtube} from 'react-feather';
 
 export default function Home() {
   const homeRef = useRef(null);
@@ -66,9 +66,32 @@ export default function Home() {
         <ContactForm />
       </section>
 
-      <section ref={testimonialsRef} className="min-h-screen">
-        {/* Testimonials Content */}
-      </section>
+      {/* <section ref={testimonialsRef} className="min-h-screen">
+      </section> */}
+
+      <footer className="bg-slate-900 text-white p-2">
+        <div className="flex justify-between items-center w-full">
+          <h1 className="text-2xl font-bold">LOGO</h1>
+          <div className="flex gap-2">
+            <Facebook />
+            <Instagram />
+            <Twitter />
+            <Youtube />
+          </div>
+        </div>
+      </footer>
+
+      <footer className="bg-slate-900 text-white p-2"> 
+        <div className="flex justify-between items-center w-full">
+          <div>
+            @Copyright 2024 Jackbox Games. All rights reserved.
+          </div>
+          <div className="flex gap-4">
+            <Link href="/">Terms of Service</Link>
+            <Link href="/" >Privacy Policy</Link>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
