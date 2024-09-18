@@ -20,7 +20,7 @@ export default function ContactForm() {
                     <textarea name="note" className="p-2 rounded bg-slate-100 resize-none"/>
                 </div>
                 <div className="flex justify-self-start">
-                    <input type="submit" value="Submit" className="bg-sky-600 text-white px-10 py-2 rounded font-bold"/>
+                    <input type="submit" value="Send" className="bg-sky-600 text-white px-10 py-2 rounded font-bold"/>
                 </div>
 
             </form> 

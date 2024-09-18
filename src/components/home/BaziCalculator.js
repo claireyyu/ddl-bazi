@@ -6,7 +6,7 @@ export default function BaziCalculator() {
     
     return (
         <div>
-            <form className="flex gap-6 p-4 m-12 text-slate-900" onsubmit="handleSubmit">
+            <form className="flex gap-6 p-4 m-12 text-slate-900" onSubmit={handleSubmit}>
                 <div className="flex gap-2">
                     <label htmlFor="birthDate" className="p-2">Birth Date</label>
                     <input type="date" name="birthDate" className="p-2 rounded-3xl" />
@@ -26,7 +26,7 @@ export default function BaziCalculator() {
                 </div>
             </form> 
             <div className="flex justify-center">
-                <input type="submit" className="bg-sky-600 text-white px-10 py-2 rounded-2xl font-bold" />
+                <input type="submit" className="bg-sky-600 text-white px-10 py-2 rounded-2xl font-bold" value="Generate"/>
             </div>
         </div>
     )
