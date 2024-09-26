@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function page() {
+function page() {
   return (
-    <div>page</div>
+    <div className="m-10">Auth page</div>
   )
 }
+
+export default page
